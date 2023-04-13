@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Coves";
+    src: url("../fonts/Coves\ Light.otf");
+  }
+
+a {
+    text-decoration: none;
+  }
+
+.header{
+    background-color: aliceblue;
+}
+
+.headerAnimation{
+    width: 100%;
+    height: 658px;
+}
+
+.navMenu li{
+    display: inline-block;
+    font-size: 24;
+    font-family: "Coves";
+}
+
+.footer img{
+    width: 475px;
+    height: 124px;
+
+}
+
+.info img{
+    width: 16px;
+    height: 16px;
+}
+
+.social img{
+    width: 16px;
+    height: 16px;
+}
+
+
