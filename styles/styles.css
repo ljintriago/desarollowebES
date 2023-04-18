@@ -1,17 +1,32 @@
+/*--------------Estilos generales--------------*/
 * {
 	margin: 0;
 	padding: 0;
     box-sizing: border-box;
+    font-size: 8px;
 }
 
-@font-face {
+@font-face{
     font-family: "Coves";
     src: url("../fonts/Coves\ Light.otf");
+
+    font-family: "Sharpe";
+    src: url("../fonts/SharpeTh_PERSONAL.ttf");
   }
+
+body {
+    font-family: "Sharpe";
+}
 
 a {
     text-decoration: none;
   }
+
+ul, ol {
+    list-style: none;
+}
+
+/*--------------Header--------------*/
 
 .header{
     background-color: aliceblue;
@@ -19,14 +34,80 @@ a {
 
 .headerAnimation{
     width: 100%;
-    height: 658px;
+    height: 94vh;
 }
 
-.navMenu li{
-    display: inline-block;
-    font-size: 24;
-    font-family: "Coves";
+.navMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 6vh;
+    position: sticky;
+    top: 0px;
 }
+
+.navMenu nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navMenu nav ul li a{
+    font-size: 2.5rem;
+    font-family: "Coves";
+    font-weight: bold;
+    color: black;
+}
+
+/*--------------Primera seccion--------------*/
+.indexFirstSection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arqDefiniton{
+    color: #1C4048;
+    width: 85vw;
+}
+
+.arqDefiniton h2{
+    font-size: 3rem;
+    padding: 30px 0 15px;
+    
+}
+
+.arqDefiniton article p{
+    font-size: 2.3rem;
+}
+
+
+.services{
+    padding-top: 30px;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.services h2{
+    font-size: 3rem;
+    color: #1C4048;
+    padding-bottom: 10px;
+    
+}
+
+.servMatrix article{
+    background-color: #8D9FA3;
+    color: white;
+    height: 100px;
+}
+
+.servMatrix article h3{
+    font-size: 3rem;
+}
+
+/*--------------Footer--------------*/
 
 .footer img{
     width: 475px;
