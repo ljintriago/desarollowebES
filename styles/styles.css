@@ -79,6 +79,7 @@ ul, ol {
 
 .arqDefiniton article p{
     font-size: 2.3rem;
+    text-align: justify;
 }
 
 
@@ -97,15 +98,98 @@ ul, ol {
     
 }
 
+.servMatrix{
+    width: 85vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
 .servMatrix article{
     background-color: #8D9FA3;
     color: white;
-    height: 100px;
+    height: 150px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
 }
 
 .servMatrix article h3{
     font-size: 3rem;
+    padding: 10px;
 }
+/*--------------Decoracion--------------*/
+.decorationBox{
+    background-color: #EBE1DB;
+    width: 60%;
+    min-width: 400px;
+    height: 200vh;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+/*--------------Segunda seccion--------------*/
+.indexSecondSection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectInfo{
+    color: #1C4048;
+    width: 85vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.projectInfo h2{
+    font-size: 3rem;
+    padding: 30px 0 15px;
+}
+
+.projectInfo article{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectInfo article p{
+    font-size: 1.75rem;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.projectInfo article button{
+    font-size: 2rem;
+    font-family: "Sharpe";
+    font-weight: bold;
+    color: #EA9B99;
+    background: none;
+    border-color: #EA9B99;
+    width: fit-content;
+    padding: 15px;
+    align-self: end;
+    border-width: medium;
+    border-style: solid;
+}
+
+
+
+/*--------------Tercera seccion--------------*/
+.indexThirdSection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 /*--------------Footer--------------*/
 
