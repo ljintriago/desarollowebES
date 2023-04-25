@@ -28,9 +28,9 @@ ul, ol {
 
 /*--------------Header--------------*/
 
-.header{
+/* .header{
     background-color: aliceblue;
-}
+} */
 
 .headerAnimation{
     width: 100%;
@@ -58,9 +58,13 @@ ul, ol {
     color: black;
 }
 
+.imgIso{
+    width: 32px;
+    height: 32px;
+}
+
 /*--------------Primera seccion--------------*/
 .indexFirstSection{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,17 +103,18 @@ ul, ol {
 }
 
 .servMatrix{
-    width: 85vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+            
 }
+
 
 .servMatrix article{
     background-color: #8D9FA3;
     color: white;
     height: 150px;
-    min-width: 350px;
+    min-width: 300px;
     display: flex;
     flex-direction: row-reverse;
     align-items: end;
@@ -179,23 +184,29 @@ ul, ol {
     border-style: solid;
 }
 
-
+.imgCarrousel article img{
+    width: 300px;
+    height: 200px;
+}
 
 /*--------------Tercera seccion--------------*/
 .indexThirdSection{
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
 }
 
-
+.indexThirdSection div img{
+    width: 300px;
+    height: 200px;
+}
 
 /*--------------Footer--------------*/
 
 .footer img{
-    width: 475px;
-    height: 124px;
+    width: 250px;
+    height: 69px;
 
 }
 
@@ -209,4 +220,41 @@ ul, ol {
     height: 16px;
 }
 
+/*--------------Media queries--------------*/
 
+@media (min-width: 400px) and (max-width: 768px){
+
+    .imgIso{
+        visibility: hidden;
+    }
+
+    .indexFirstSection{
+        height: 100vh;
+    }
+
+    .servMatrix{
+            width: inherit;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+    }
+}
+
+@media (min-width: 1201px){
+
+    .imgIso{
+        visibility: hidden;
+    }
+
+    .indexFirstSection{
+        height: 100vh;
+    }
+
+    .servMatrix{
+        width: 85vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+}

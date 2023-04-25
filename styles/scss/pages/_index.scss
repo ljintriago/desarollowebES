@@ -1,0 +1,250 @@
+.indexFirstSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arqDefiniton{
+    color: $color-base-1;
+    width: 85vw;
+
+    h2{
+        font-size: 3rem;
+        padding: 30px 0 15px;
+    }
+
+    article{
+        p{
+            font-size: 2.3rem;
+        }
+    }
+}
+
+.services{
+    padding-top: 30px;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-bottom: 30px;
+
+    h2{
+        font-size: 3rem;
+        color: $color-base-1;
+    }
+}
+
+
+.servMatrix{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    
+    article{
+        background-color: $color-base-2;
+        color: white;
+        height: 150px;
+        min-width: 300px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+        margin-bottom: 10px;
+
+        h3{
+            font-size: 3rem;
+            padding: 10px;
+        }
+
+        
+    }
+
+    
+}
+
+
+
+.decorationBox{
+    background-color: $color-base-3;
+    width: 60%;
+    min-width: 400px;
+    height: 190vh;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.indexSecondSection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectInfo{
+    color: $color-base-1;
+    width: 85vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 75px;
+
+    h2{
+        font-size: 3rem;
+        padding: 30px 0 15px;
+    }
+
+    article{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+
+        p{
+            font-size: 1.75rem;
+            text-align: justify;
+            padding-bottom: 20px;
+        }
+
+        button{
+            font-size: 2rem;
+            font-family: "Sharpe";
+            font-weight: bold;
+            color: $color-base-4;
+            background: none;
+            border-color: $color-base-4;
+            width: fit-content;
+            padding: 15px;
+            align-self: end;
+            border-width: medium;
+            border-style: solid;
+        }
+    }
+}
+
+.imgCarrousel {
+    article {
+        img{
+            width: 300px;
+            height: 200px;                  
+        }
+    }
+}
+
+.card{
+    width: 85vw;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+}
+
+.card-title{
+    font-size: 3rem;
+    color: $color-base-1;
+    padding-bottom: 10px;
+}
+
+.btnBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cardIconGroup{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardIcon{
+    width: 32px;
+    height: 32px;
+}
+
+.cardIconLittle{
+    font-size: 1.5rem;
+    color: $color-base-1;
+}
+
+
+.indexThirdSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+
+    img{
+        width: 85vw;
+        height: 400px;
+        padding-bottom: 20px;
+    }
+
+    p{
+        font-size: 1.75rem;
+        color: $color-base-1;
+    }
+}
+
+.thirdTittle{
+    width: 85vw;
+    display: flex;
+    justify-content: end;
+
+    h2{
+        font-size: 3rem;
+        color: $color-base-4;
+        padding-bottom: 20px;
+    }
+}
+
+.thirdContent{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width: 401px) and (max-width: 1200px){
+
+    .imgIso{
+        visibility: hidden;
+    }
+
+
+    .servMatrix{
+            width: inherit;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+
+            article{
+                margin-bottom: 0;
+            }
+    }
+}
+
+@media (min-width: 1201px){
+
+    .imgIso{
+        visibility: hidden;
+    }
+
+    .indexFirstSection{
+        height: 100vh;
+    }
+
+    .servMatrix{
+        width: 85vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+
+        article{
+            margin-bottom: 0;
+        }
+    }
+
+}

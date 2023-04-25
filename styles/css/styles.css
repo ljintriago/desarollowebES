@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 8px;
+}
+
+@font-face {
+  font-family: "Coves";
+  src: url("../fonts/Coves Light.otf");
+  font-family: "Sharpe";
+  src: url("../fonts/SharpeTh_PERSONAL.ttf");
+}
+body {
+  font-family: "Sharpe";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+p {
+  text-align: justify;
+}
+
+.footer img {
+  width: 250px;
+  height: 69px;
+}
+
+.info img {
+  width: 16px;
+  height: 16px;
+}
+
+.social img {
+  width: 16px;
+  height: 16px;
+}
+
+.headerAnimation {
+  width: 100%;
+  height: 94vh;
+}
+
+.navbar {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 3;
+}
+
+.navbar-toggler {
+  border: transparent;
+  color: transparent;
+}
+
+.navbar-toggler-icon {
+  width: 4em;
+  height: 4em;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 6vh;
+}
+.navMenu nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navMenu nav ul li a {
+  font-size: 2.5rem;
+  font-family: "Coves";
+  font-weight: bold;
+  color: black;
+}
+
+.imgIso {
+  width: 32px;
+  height: 32px;
+}
+
+.indexFirstSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arqDefiniton {
+  color: #1C4048;
+  width: 85vw;
+}
+.arqDefiniton h2 {
+  font-size: 3rem;
+  padding: 30px 0 15px;
+}
+.arqDefiniton article p {
+  font-size: 2.3rem;
+}
+
+.services {
+  padding-top: 30px;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-bottom: 30px;
+}
+.services h2 {
+  font-size: 3rem;
+  color: #1C4048;
+}
+
+.servMatrix {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.servMatrix article {
+  background-color: #8D9FA3;
+  color: white;
+  height: 150px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: end;
+  margin-bottom: 10px;
+}
+.servMatrix article h3 {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.decorationBox {
+  background-color: #EBE1DB;
+  width: 60%;
+  min-width: 400px;
+  height: 190vh;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.indexSecondSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectInfo {
+  color: #1C4048;
+  width: 85vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 75px;
+}
+.projectInfo h2 {
+  font-size: 3rem;
+  padding: 30px 0 15px;
+}
+.projectInfo article {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.projectInfo article p {
+  font-size: 1.75rem;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+.projectInfo article button {
+  font-size: 2rem;
+  font-family: "Sharpe";
+  font-weight: bold;
+  color: #EA9B99;
+  background: none;
+  border-color: #EA9B99;
+  width: fit-content;
+  padding: 15px;
+  align-self: end;
+  border-width: medium;
+  border-style: solid;
+}
+
+.imgCarrousel article img {
+  width: 300px;
+  height: 200px;
+}
+
+.card {
+  width: 85vw;
+  max-width: 400px;
+  max-height: 400px;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 3rem;
+  color: #1C4048;
+  padding-bottom: 10px;
+}
+
+.btnBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cardIconGroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.cardIconLittle {
+  font-size: 1.5rem;
+  color: #1C4048;
+}
+
+.indexThirdSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.indexThirdSection img {
+  width: 85vw;
+  height: 400px;
+  padding-bottom: 20px;
+}
+.indexThirdSection p {
+  font-size: 1.75rem;
+  color: #1C4048;
+}
+
+.thirdTittle {
+  width: 85vw;
+  display: flex;
+  justify-content: end;
+}
+.thirdTittle h2 {
+  font-size: 3rem;
+  color: #EA9B99;
+  padding-bottom: 20px;
+}
+
+.thirdContent {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 401px) and (max-width: 1200px) {
+  .imgIso {
+    visibility: hidden;
+  }
+  .servMatrix {
+    width: inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .servMatrix article {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1201px) {
+  .imgIso {
+    visibility: hidden;
+  }
+  .indexFirstSection {
+    height: 100vh;
+  }
+  .servMatrix {
+    width: 85vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .servMatrix article {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

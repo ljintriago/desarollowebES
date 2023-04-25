@@ -1,0 +1,35 @@
+$color-base-1:#1C4048;
+$color-base-2:#8D9FA3;
+$color-base-3:#EBE1DB;
+$color-base-4:#EA9B99;
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-size: 8px;
+}
+
+@font-face{
+    font-family: "Coves";
+    src: url("../fonts/Coves\ Light.otf");
+
+    font-family: "Sharpe";
+    src: url("../fonts/SharpeTh_PERSONAL.ttf");
+  }
+
+body {
+    font-family: "Sharpe";
+}
+
+a {
+    text-decoration: none;
+  }
+
+ul, ol {
+    list-style: none;
+}
+
+p{
+  text-align: justify;
+}
