@@ -27,19 +27,54 @@ p {
   text-align: justify;
 }
 
-.footer img {
+.footerContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.disclaimer {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.disclaimer img {
   width: 250px;
   height: 69px;
 }
-
-.info img {
-  width: 16px;
-  height: 16px;
+.disclaimer p {
+  font-size: 1.1rem;
 }
 
+.info {
+  width: 75vw;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.info img {
+  width: 32px;
+  height: 32px;
+  padding-right: 5px;
+}
+
+.infoBox {
+  display: flex;
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+.social {
+  width: 75vw;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
 .social img {
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
 }
 
 .headerAnimation {
