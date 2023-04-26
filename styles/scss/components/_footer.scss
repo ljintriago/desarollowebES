@@ -51,3 +51,46 @@
         height: 32px;
     }
 }
+
+@media (min-width: 401px) and (max-width: 1200px){
+
+}
+
+@media (min-width: 1201px){
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 85vw;
+    }
+
+    .disclaimer{
+        width: auto;
+        grid-column: 1/2;
+        grid-row: 1;
+        padding-right: 30px;
+    }
+
+    .info{
+        width: auto;
+        grid-column: 2/3;
+        padding-left: 30px;
+
+    }
+
+    .social{
+        width: auto;
+        grid-column: 3/4;
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+        justify-content: flex-end;
+        img{
+            margin-left: 20px;
+        }
+    }
+}

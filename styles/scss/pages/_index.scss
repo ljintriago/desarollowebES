@@ -247,4 +247,32 @@
         }
     }
 
+    .decorationBox{
+        width: 65%;
+        height: 177.5vh;
+    }
+
+    .indexThirdSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    
+        img{
+            width: 400px;
+            height: 500px;
+            padding-bottom: 0px;
+        }
+    
+        p{
+            width: 50%;
+        }
+    }
+
+    .thirdContent{
+        width: 85vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
