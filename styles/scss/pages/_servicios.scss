@@ -1,0 +1,201 @@
+.servicios{
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 100%;
+    padding-bottom: 20px;
+}
+
+.servicio1{
+    background-color: $color-base-5;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding-right: 20px;
+    height: 100%;
+
+    h1{
+        font-size: 3rem;
+        color: white;
+    }
+    
+}
+
+.servicio2{
+    background-color: $color-base-2;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    height: 100%;
+
+    h1{
+        font-size: 3rem;
+        color: white;
+    }
+}
+
+.servicio3{
+    background-color: $color-base-3;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding-right: 20px;
+    height: 100%;
+
+    h1{
+        font-size: 3rem;
+        color: white;
+    }
+}
+
+.servicio4{
+    background-color: $color-base-5;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    height: 100%;
+
+    h1{
+        font-size: 3rem;
+        color: white;
+    }
+}
+
+.servicio5{
+    background-color: $color-base-2;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding-right: 20px;
+    height: 100%;
+
+    h1{
+        font-size: 3rem;
+        color: white;
+    }
+}
+
+.servicio6{
+    background-color: $color-base-3;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    height: 100%;
+
+    h1{
+        font-size: 3rem;
+        color: white;
+    }
+}
+
+
+.oddService{
+    display: flex;
+            flex-direction: column;
+            p{
+                font-size: 2rem;
+                color: $color-base-1;
+                width: 85vw;
+            }
+}
+
+.evenService{
+    display: flex;
+            flex-direction: column;
+            p{
+                font-size: 2rem;
+                color: $color-base-1;
+                width: 85vw;
+            }
+}
+
+.servicioDetalleDesc{
+    align-self: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.detalle{
+
+    height: 130px;
+
+}
+
+@media (min-width: 1201px) {
+    .servicios{
+        height: 90vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .servicio1{
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 0;
+        
+        h1{
+            transform: rotate(270deg);
+        }
+    }
+
+    .servicio2{
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 0;
+
+        h1{
+            transform: rotate(90deg);
+        }
+    }
+
+    .servicio3{
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 0;
+
+        h1{
+            transform: rotate(270deg);
+        }
+    }
+
+    .servicio4{
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 0;
+
+        h1{
+            transform: rotate(90deg);
+        }
+    }
+
+    .servicio5{
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 0;
+
+        h1{
+            transform: rotate(270deg);
+        }
+    }
+
+    .servicio6{
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 0;
+
+        h1{
+            transform: rotate(90deg);
+        }
+    }
+
+    .oddService{
+        flex-direction: row-reverse;
+    }
+
+    .evenService{
+        flex-direction: row;
+    }
+
+    .detalle{
+        height: 40vh;
+    }
+
+}
