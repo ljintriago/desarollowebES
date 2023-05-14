@@ -7,9 +7,11 @@
 
 @font-face {
   font-family: "Coves";
-  src: url("../fonts/Coves Light.otf");
+  src: url("../../fonts/Coves Light.otf");
   font-family: "Sharpe";
-  src: url("../fonts/SharpeTh_PERSONAL.ttf");
+  src: url("../../fonts/SharpeTh_PERSONAL.ttf");
+  font-family: "SharpeBold";
+  src: url("../../fonts/SharpeBo_PERSONAL.ttf");
 }
 body {
   font-family: "Sharpe";
@@ -25,6 +27,11 @@ ul, ol {
 
 p {
   text-align: justify;
+}
+
+footer {
+  background-color: white;
+  padding-top: 50px;
 }
 
 .footerContainer {
@@ -154,7 +161,7 @@ p {
   height: 32px;
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 768px) {
   .navCustom {
     background-color: #1C4048;
   }
@@ -171,6 +178,318 @@ p {
   }
   .navCustom .container-fluid a {
     align-self: center;
+  }
+}
+.mainArquitectos {
+  display: flex;
+  flex-direction: column;
+  background-color: #8D9FA3;
+}
+
+.arquitectosSection1 {
+  background-color: white;
+  margin: 10px 10px 5px 10px;
+}
+.arquitectosSection1 article {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 50px 20px 50px 20px;
+}
+.arquitectosSection1 article img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  order: 2;
+  margin-bottom: 30px;
+}
+.arquitectosSection1 article p {
+  font-size: 1.75rem;
+  color: #EA9B99;
+  padding-top: 10px;
+}
+.arquitectosSection1 article h1 {
+  order: 1;
+  font-size: 2.5rem;
+  color: #EA9B99;
+}
+
+.arquitectosSection2 {
+  background-color: white;
+  margin: 5px 10px 5px 10px;
+}
+.arquitectosSection2 article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 50px 20px;
+}
+.arquitectosSection2 article img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.arquitectosSection2 article p {
+  font-size: 1.75rem;
+  color: #1C4048;
+  padding-top: 10px;
+}
+.arquitectosSection2 article h1 {
+  font-size: 2.5rem;
+  color: #1C4048;
+}
+
+.arquitectosSection3 {
+  background-color: white;
+  margin: 5px 10px 10px 10px;
+}
+.arquitectosSection3 article {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 50px 20px 50px 20px;
+}
+.arquitectosSection3 article img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  order: 2;
+  margin-bottom: 30px;
+}
+.arquitectosSection3 article p {
+  font-size: 1.75rem;
+  color: #8D593D;
+  padding-top: 10px;
+}
+.arquitectosSection3 article h1 {
+  order: 1;
+  font-size: 2.5rem;
+  color: #8D593D;
+}
+
+@media (min-width: 768px) {
+  .mainArquitectos {
+    align-items: center;
+    background-color: white;
+  }
+  .arquitectosSection1 {
+    margin: 0;
+  }
+  .arquitectosSection1 article {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% 90%;
+    padding: 50px 0 50px 0;
+    width: 85vw;
+  }
+  .arquitectosSection1 article img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    order: 2;
+    margin-left: 30px;
+    margin-bottom: 0;
+    grid-area: 1/2/3/3;
+  }
+  .arquitectosSection1 article p {
+    font-size: 1.75rem;
+    color: #8D593D;
+    padding-top: 10px;
+    grid-area: 2/1/3/2;
+  }
+  .arquitectosSection1 article h1 {
+    order: 1;
+    font-size: 2.5rem;
+    color: #8D593D;
+    grid-area: 1/1/2/2;
+  }
+  .arquitectosSection2 {
+    margin: 0;
+  }
+  .arquitectosSection2 article {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 10% 90%;
+    padding: 50px 0 50px 0;
+    width: 85vw;
+  }
+  .arquitectosSection2 article img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    order: 2;
+    margin-right: 30px;
+    margin-bottom: 0;
+    grid-area: 1/1/3/2;
+  }
+  .arquitectosSection2 article p {
+    font-size: 1.75rem;
+    color: #8D593D;
+    padding-top: 10px;
+    grid-area: 2/2/3/3;
+  }
+  .arquitectosSection2 article h1 {
+    order: 1;
+    font-size: 2.5rem;
+    color: #8D593D;
+    grid-area: 1/2/2/3;
+  }
+  .arquitectosSection3 {
+    margin: 0;
+  }
+  .arquitectosSection3 article {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% 90%;
+    padding: 50px 0 50px 0;
+    width: 85vw;
+  }
+  .arquitectosSection3 article img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    order: 2;
+    margin-left: 30px;
+    margin-bottom: 0;
+    grid-area: 1/2/3/3;
+  }
+  .arquitectosSection3 article p {
+    font-size: 1.75rem;
+    color: #8D593D;
+    padding-top: 10px;
+    grid-area: 2/1/3/2;
+  }
+  .arquitectosSection3 article h1 {
+    order: 1;
+    font-size: 2.5rem;
+    color: #8D593D;
+    grid-area: 1/1/2/2;
+  }
+}
+.mainContacto {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../../img/pry6.jpeg");
+  margin-bottom: 0;
+}
+
+.contactoFirstSection {
+  height: 95vh;
+  margin: 20px;
+  background-color: white;
+}
+
+.contactoInnerSection {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactoInnerSection h1 {
+  font-size: 3.5rem;
+  color: #1C4048;
+  margin-bottom: 30px;
+}
+
+.contactoForm {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.formName {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+}
+.formName textarea {
+  resize: none;
+}
+
+.inputNombre {
+  border: 0;
+  border-bottom: 2px solid #1C4048;
+  outline: 0;
+  padding: 2px 0;
+  font-size: 2.5rem;
+  font-family: "Sharpe";
+  width: 100%;
+  transition: border-color 0.2s;
+}
+.inputNombre::placeholder {
+  color: transparent;
+}
+.inputNombre:placeholder-shown ~ .labelNombre {
+  font-size: 2.5rem;
+  cursor: text;
+  top: 20px;
+}
+
+.labelNombre {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 2.5rem;
+  color: #1C4048;
+}
+
+.inputNombre:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-color: #EA9B99;
+}
+.inputNombre:focus ~ .labelNombre {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 2rem;
+  color: #EA9B99;
+  font-weight: 700;
+}
+
+.inputNombre:required, .inputNombre:invalid {
+  box-shadow: none;
+}
+
+.formSubmit {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.btnSubmit {
+  font-size: 2rem;
+  font-family: "Sharpe";
+  font-weight: bold;
+  color: #EA9B99;
+  background: none;
+  border-color: #EA9B99;
+  width: fit-content;
+  padding: 15px;
+  align-self: end;
+  border-width: medium;
+  border-style: solid;
+  width: 150px;
+}
+
+@media (min-width: 768px) {
+  .mainContacto {
+    height: 90vh;
+    align-items: center;
+  }
+  .contactoFirstSection {
+    height: 85vh;
+    width: 50vw;
   }
 }
 .indexFirstSection {
@@ -666,11 +985,120 @@ main {
   .oddService {
     flex-direction: row-reverse;
   }
+  .oddService p {
+    width: 80vw;
+    padding-right: 30px;
+  }
   .evenService {
     flex-direction: row;
   }
+  .evenService p {
+    width: 80vw;
+    padding-left: 30px;
+  }
   .detalle {
     height: 40vh;
+  }
+}
+.mainAboutUs {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgAnimation {
+  display: none;
+}
+
+.aboutUsFirst {
+  height: 100vh;
+  padding: 0 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutUsFirst h1 {
+  font-size: 2.5rem;
+  text-align: justify;
+  padding-bottom: 20px;
+  font-family: "SharpeBold";
+  color: #1C4048;
+}
+.aboutUsFirst p {
+  font-size: 1.75rem;
+  color: #1C4048;
+}
+
+.aboutUsSecond {
+  height: 30vh;
+  padding: 0 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+.aboutUsSecond h1 {
+  font-size: 2rem;
+  text-align: justify;
+  padding-bottom: 20px;
+  font-family: "SharpeBold";
+  color: #1C4048;
+}
+.aboutUsSecond p {
+  font-size: 1.75rem;
+  color: #1C4048;
+}
+
+.aboutUsThird {
+  padding: 0 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+.aboutUsThird h1 {
+  font-size: 2rem;
+  text-align: justify;
+  padding-bottom: 20px;
+  font-family: "SharpeBold";
+  color: #1C4048;
+}
+.aboutUsThird p {
+  font-size: 1.75rem;
+  color: #1C4048;
+}
+
+@media (min-width: 768px) {
+  .mainAboutUs {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 33% 33% 1fr;
+  }
+  .imgAnimation {
+    display: block;
+  }
+  .imgAnimation img {
+    width: 100%;
+    height: 100vh;
+  }
+  .firstSection {
+    grid-area: 1/2/4/3;
+  }
+  .secondSection {
+    grid-area: 1/1/2/2;
+  }
+  .thirdSection {
+    grid-area: 2/1/3/2;
+  }
+  .fourthSection {
+    grid-area: 3/1/4/2;
+  }
+  .aboutUsFirst {
+    height: 33vh;
+    padding: 100px 30px 0 100px;
+    justify-content: start;
+  }
+  .aboutUsSecond {
+    height: 30vh;
+    padding: 100px 30px 0 100px;
+  }
+  .aboutUsThird {
+    padding: 100px 30px 0 100px;
   }
 }
 

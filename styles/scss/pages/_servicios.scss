@@ -188,10 +188,19 @@
 
     .oddService{
         flex-direction: row-reverse;
+        p{
+            width: 80vw;
+            padding-right: 30px;
+        }
     }
 
     .evenService{
         flex-direction: row;
+        p{
+            width: 80vw;
+            padding-left: 30px;
+        }
+        
     }
 
     .detalle{

@@ -40,50 +40,43 @@
           </div>
         </div>
     </div>
-    <main>
-        <section>
-            <h2>Dejanos un mensaje</h2>
-            
-            <form action="">
-                <div>
-                    <label for="nombre">Nomre y Apellido</label>
-                    <input type="text" id="nombre" name="nombre">
-                </div>
+    <main class="mainContacto">
+        <section class="contactoFirstSection">
+            <div class="contactoInnerSection">
+                <h1>Contáctanos</h1>
+                <form action="" class="contactoForm">
+                    <div class="formName">
+                        <input class="inputNombre" type="input " id="nombre" name="nombre"
+                        placeholder="Nombre">
+                        <label class="labelNombre" for="nombre">Nombre</label>
+                    </div>
 
-                <div>
-                    <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email">
-                </div>
+                    <div class="formName">
+                        <input class="inputNombre" type="input" id="apellido" name="apellido" placeholder="Apellido">
+                        <label class="labelNombre" for="apellido">Apellido</label>
+                    </div>
 
-                <div>
-                    <label for="asunto">Asunto</label>
-                    <select name="asunto" id="asunto">
-                        <option value="msg">Mensaje</option>
-                        <option value="queja">Queja</option>
-                    </select>
-                </div>
+                    <div class="formName">
+                        <input type="input" id="email" name="email" class="inputNombre" placeholder="E-mail">
+                        <label class="labelNombre" for="email">E-mail</label>
+                    </div>
 
-                <div>
-                    <label for="msg">Mensaje</label>
-                    <textarea cols="50" rows="10"  id="msg" name="msg"></textarea>
-                </div>
+                    <div class="formName">
+                        <input type="input" id="asunto" name="asunto" class="inputNombre" placeholder="Asunto">
+                        <label class="labelNombre" for="asunto">Asunto</label>
+                    </div>
 
-                <div>
-                    <span>Genero</span>
-                    <label for="hombre">Hombre</label>
-                    <input type="radio" id="hombre" name="hombre" value="hombre">
-                    <label for="mujer">Mujer</label>
-                    <input type="radio" id="mujer" name="mujer" value="mujer">
-                </div>
+                    <div class="formName">
+                        <textarea cols="50" rows="10"  id="msg" name="msg" class="inputNombre"  placeholder="Mensaje"></textarea>
+                        <label for="msg" class="labelNombre">Mensaje</label>
+                    </div>
 
-
-                <div>
-                    <input type="submit">
-                    <input type="reset">
-                </div>
-                
-            </form>
-
+                    <div class="formSubmit">
+                        <input type="submit" class="btnSubmit">
+                    </div>
+                    
+                </form>
+            </div>
         </section>
         
 

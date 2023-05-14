@@ -1,0 +1,126 @@
+.mainContacto{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    background-image: url("../../../img/pry6.jpeg");
+    margin-bottom: 0;
+}
+
+.contactoFirstSection{
+    height: 95vh;
+    margin: 20px;
+    background-color: white;
+}
+
+.contactoInnerSection{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        font-size: 3.5rem;
+        color: $color-base-1;
+        margin-bottom: 30px;
+    }
+}
+
+.contactoForm{
+    align-self: flex-start;
+    width: 100%;
+}
+
+.formName {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+
+    textarea{
+        resize: none;
+    }
+}
+
+.inputNombre{
+    border: 0;
+    border-bottom: 2px solid $color-base-1;
+    outline: 0;
+    padding: 2px 0;
+    font-size: 2.5rem;
+    font-family: "Sharpe";
+    width: 100%;
+    transition: border-color 0.2s;
+
+    &::placeholder
+    {
+        color: transparent;
+    }
+
+    &:placeholder-shown ~ .labelNombre {
+        font-size: 2.5rem;
+        cursor: text;
+        top: 20px;
+    }
+}
+
+.labelNombre{
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 2.5rem;
+    color: $color-base-1;
+}
+
+.inputNombre:focus{
+    ~ .labelNombre{
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 2rem;
+        color: $color-base-4;
+        font-weight:700;
+    }
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-color: $color-base-4;
+}
+
+.inputNombre{
+    &:required,&:invalid { box-shadow:none; }
+}
+
+.formSubmit{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btnSubmit{
+    font-size: 2rem;
+    font-family: "Sharpe";
+    font-weight: bold;
+    color: $color-base-4;
+    background: none;
+    border-color: $color-base-4;
+    width: fit-content;
+    padding: 15px;
+    align-self: end;
+    border-width: medium;
+    border-style: solid;
+    width: 150px;
+}
+
+@media (min-width: 768px){
+
+    .mainContacto{
+        height: 90vh;
+        align-items: center;
+    }
+    
+    .contactoFirstSection{
+        height: 85vh;
+        width: 50vw;
+    }
+}

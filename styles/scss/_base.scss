@@ -4,6 +4,7 @@ $color-base-3:#EBE1DB;
 $color-base-4:#EA9B99;
 $color-base-5:#C6AC9E;
 $color-base-6:#F4AAAB;
+$color-base-7:#8D593D;
 
 
 * {
@@ -15,10 +16,13 @@ $color-base-6:#F4AAAB;
 
 @font-face{
     font-family: "Coves";
-    src: url("../fonts/Coves\ Light.otf");
+    src: url("../../fonts/Coves Light.otf");
 
     font-family: "Sharpe";
-    src: url("../fonts/SharpeTh_PERSONAL.ttf");
+    src: url("../../fonts/SharpeTh_PERSONAL.ttf");
+
+    font-family: "SharpeBold";
+    src: url("../../fonts/SharpeBo_PERSONAL.ttf");
   }
 
 body {
